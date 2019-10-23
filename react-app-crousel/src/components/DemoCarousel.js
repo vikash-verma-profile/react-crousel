@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import {img1} from '../assets/1.jpg';
-import {img2} from '../assets/2.jpg';
-import {hi} from '../assets/sample.txt';
-
+import img1 from '../img/1.jpg';
+import img2 from '../img/2.jpg';
 
 console.log(img2); 
 class DemoCarousel extends Component {
@@ -13,7 +11,7 @@ class DemoCarousel extends Component {
         return (
             <Carousel>
                 <div>
-                    <img src="../assets/1.jpg"/>
+                    <img src={img1}/>
                     <p className="legend">Legend 1</p>
                 </div>
                 <div>
